@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Shantell+Sans&display=swap" rel="stylesheet">
+<body>
+<style type="text/css">
+label{
+font-family: 'Roboto Slab', serif;
+  } 
+  p{
+font-family: 'Roboto Slab', serif;
+  }  
+  h1{
+font-family: 'Roboto Slab', serif;
+font-size: 15pt
+  }
+		#div1{
+			border-style: dotted; 
+			border-color: #DB1F48; 
+			margin: 15%;
+			padding: 12px; 
+      border-radius: 34px;
+      background-color: #E5DDC8;
+		}
+   body{
+    background-color: #004369;
+  }
+  </style>
+  </head>
+  <center>
+<body>
+  <div id=div1>
+  	<img src="unit converter.gif" width="50%" height="50%">
+    <h1 align="center" style="color:#01949A">(Measurement mode is on: <i>Length</i>)</h1>
+    <br>
+    <br>
+    <label style="color:#004369">Millimeter/s: </label>    
+<input id="inputMillimeters" type="number" placeholder="Millimeters" oninput="UnitConverter(this.value)" onchange="UnitConverter(this.value)">
+    </p>
+  <p style="color:#004369">Centimeters: <span id="outputCentimeters"></span></p>
+<script>
+  function UnitConverter(valNum) {
+  valNum= parseFloat(valNum);
+  document.getElementById("outputCentimeters").innerHTML = valNum / 10
+  }
+    </script>
+    <br>
+<img src="heartheart.gif" width="15%" height="15%">
+    <br>
+    <label style="color:#01949a">Millimeter/s: </label>    
+<input id="inputMillimeters" type="number" placeholder="Millimeters" oninput="UnitConverter(this.value)" onchange="UnitConverter(this.value)">
+    </p>
+  <p style="color:#01949a">Meters: <span id="outputMeters"></span></p>
+<script>
+  function UnitConverter(valNum) {
+  valNum= parseFloat(valNum);
+  document.getElementById("outputMeters").innerHTML= valNum / 1000
+  }
+    </script>
+    <br>
+    <img src="heartheart.gif" width="15%" height="15%">
+    <br>
+     <label style="color:#db1f48">Millimeter/s: </label>    
+<input id="inputMillimeters" type="number" placeholder="Millimeters" oninput="UnitConverter(this.value)" onchange="UnitConverter(this.value)">
+    </p>
+  <p style="color:#db1f48">Kilometers: <span id="outputKilometers"></span></p>
+<script>
+  function UnitConverter(valNum) {
+  valNum= parseFloat(valNum);
+  document.getElementById("outputKilometers").innerHTML= valNum / 1e+6
+  }
+    </script>
+    <img src="heartheart.gif" width="15%" height="15%">
+  </body>
+  </div>
+</center>
+  </head>
+</html>
